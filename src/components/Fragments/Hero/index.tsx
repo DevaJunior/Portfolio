@@ -6,8 +6,8 @@ const Hero: React.FC = () => {
   return (
     <section id="home" className="hero-container">
       <div className="hero-text">
-        <h1>Hi, nice to meet you!</h1>
-        <h1>I'm Devair Junior.</h1>
+        <h1>Hi, welcome!</h1>
+        <h1>I'm Goku.</h1>
         <p>Dev Front-end Bio-IT</p>
       </div>
       <div className="hero-graphic">
