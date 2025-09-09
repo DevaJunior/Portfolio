@@ -42,6 +42,13 @@
   color: var(--font-secondary);
   flex-grow: 1;
   margin-bottom: 20px;
+  text-align: justify;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .project-tech {
@@ -54,10 +61,14 @@
 /* Estilos para o Card Principal (Featured) */
 /* ============================================== */
 .project-card--featured {
-  background-color: var(--background-dark); /* Fundo mais escuro para o card principal */
-  border: 1px solid var(--background-light); /* Borda sutil para definir */
-  padding: 30px; /* Mais padding interno */
-  text-align: center; /* Centraliza o texto principal */
+  background-color: var(--background-dark);
+  /* Fundo mais escuro para o card principal */
+  border: 1px solid var(--background-light);
+  /* Borda sutil para definir */
+  padding: 30px;
+  /* Mais padding interno */
+  text-align: center;
+  /* Centraliza o texto principal */
 }
 
 .featured-header h3 {
@@ -80,40 +91,47 @@
   padding: 20px;
   margin-bottom: 30px;
   display: flex;
-  flex-direction: column; /* Organiza verticalmente */
-  align-items: center; /* Centraliza os itens */
+  flex-direction: column;
+  /* Organiza verticalmente */
+  align-items: center;
+  /* Centraliza os itens */
 }
 
 .mini-card-image {
-  width: 100%; /* Adapta ao pai */
-  max-height: 200px; /* Altura máxima para a imagem interna */
+  width: 100%;
+  /* Adapta ao pai */
+  max-height: 200px;
+  /* Altura máxima para a imagem interna */
   object-fit: cover;
-  border-radius: 4px; /* Pequeno arredondamento para a imagem interna */
+  border-radius: 4px;
+  /* Pequeno arredondamento para a imagem interna */
   margin-bottom: 15px;
 }
 
 .mini-card-greeting {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--font-primary);
-    margin-bottom: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--font-primary);
+  margin-bottom: 5px;
 }
 
 .mini-card-name {
-    font-size: 1.2rem;
-    color: var(--accent-color);
+  font-size: 1.2rem;
+  color: var(--accent-color);
 }
 
 
 .featured-description-block {
-  text-align: left; /* Alinha o texto da descrição à esquerda */
+  text-align: left;
+  /* Alinha o texto da descrição à esquerda */
 }
 
 .featured-description {
   font-size: 1rem;
   line-height: 1.7;
   text-align: justify;
-  color: var(--font-primary); /* Texto branco */
+  color: var(--font-primary);
+  /* Texto branco */
   margin-bottom: 20px;
 }
 
@@ -121,8 +139,10 @@
   font-size: 0.9rem;
   color: var(--accent-color);
   font-family: 'Courier New', Courier, monospace;
-  white-space: pre-wrap; /* Permite que o texto quebre linha mantendo a formatação */
-  text-align: left; /* Garante alinhamento à esquerda para a lista de tecnologias */
+  white-space: pre-wrap;
+  /* Permite que o texto quebre linha mantendo a formatação */
+  text-align: left;
+  /* Garante alinhamento à esquerda para a lista de tecnologias */
 }
 
 /* Responsividade para o card principal */
@@ -130,25 +150,32 @@
   .project-card--featured {
     padding: 20px;
   }
+
   .featured-header h3 {
     font-size: 1.5rem;
   }
+
   .featured-subtitle {
     font-size: 0.9rem;
   }
+
   .mini-card {
     padding: 15px;
     margin-bottom: 20px;
   }
+
   .mini-card-greeting {
     font-size: 1.2rem;
   }
+
   .mini-card-name {
     font-size: 1rem;
   }
+
   .featured-description {
     font-size: 0.9rem;
   }
+
   .featured-tech {
     font-size: 0.8rem;
   }
@@ -156,25 +183,30 @@
 
 @media (max-width: 480px) {
   .project-card {
-    padding: 8px; /* Reduz o padding interno do cartão */
+    padding: 8px;
+    /* Reduz o padding interno do cartão */
   }
 
   .project-content {
-    padding: 15px; /* Reduz o padding do conteúdo */
+    padding: 15px;
+    /* Reduz o padding do conteúdo */
   }
 
   .project-content h3 {
-    font-size: 1.2rem; /* Diminui o tamanho do título */
+    font-size: 1.2rem;
+    /* Diminui o tamanho do título */
     margin-bottom: 8px;
   }
 
   .project-description {
-    font-size: 0.85rem; /* Diminui o tamanho da descrição */
+    font-size: 0.85rem;
+    /* Diminui o tamanho da descrição */
     margin-bottom: 15px;
   }
 
   .project-tech {
-    font-size: 0.75rem; /* Diminui o tamanho da tecnologia */
+    font-size: 0.75rem;
+    /* Diminui o tamanho da tecnologia */
   }
 
   /* Ajustes para o card principal em smartphones */

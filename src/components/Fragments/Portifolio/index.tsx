@@ -8,6 +8,7 @@ import img1 from '../../../images/wpp/wpp-app-portifolio.png';
 import img2 from '../../../images/wpp/wpp-app-spotted.png';
 import img3 from '../../../images/wpp/wpp-app-biogen.png';
 import img4 from '../../../images/wpp/wpp-app-omni-2.png';
+import img5 from '../../../images/wpp/wpp-app-trackmoney.png';
 
 const projects = [
   {
@@ -18,9 +19,9 @@ const projects = [
   },
   {
     title: 'T R A C K . M O N E Y',
-    description: 'Plataforma de gestão financeira. Através desta ferramenta, o usuário pode inserir, editar e deletar seus gastos, criar listas de tarefas e acompanhar metas através de gráficos e relatórios.',
+    description: 'O TrackMoney é uma solução inteligente de gestão financeira pessoal, desenvolvida para simplificar o controle do seu dinheiro e ajudar na construção de hábitos mais saudáveis de consumo. Muito além de um simples app de anotações de gastos, ele oferece recursos interativos de acompanhamento em tempo real, categorização automática de despesas e visualização clara por meio de gráficos e relatórios. Pensado para estudantes, profissionais e famílias, o TrackMoney coloca a organização financeira literalmente na palma da mão, promovendo autonomia, planejamento e tomada de decisão consciente no dia a dia.',
     technologies: 'React • TypeScript • HTML e CSS • Redux • Firebase • Github',
-    imageUrl: "https://devajunior.github.io/Portfolio/static/media/wpp-app-spotted.d7a9052e9fc61f4ba43f.png",
+    imageUrl: img5,
   },
   {
     title: 'S P O T T E D',
@@ -37,7 +38,7 @@ const projects = [
   {
     title: 'Omni',
     description: '...',
-    technologies: 'Fuzzy • Biotecnologia • React • TypeScript • HTML e CSS • Redux • Firebase • Github',
+    technologies: 'Biotecnologia • Fuzzy • Python • React • TypeScript • HTML e CSS • Redux • Firebase • Github',
     imageUrl: img4,
   },
   {
