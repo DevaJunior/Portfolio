@@ -1,0 +1,55 @@
+.contact-section {
+  background-color: var(--background-light);
+}
+
+.contact-container {
+  text-align: center;
+  padding: 50px 25px;
+}
+
+.contact-container h2 {
+  font-size: 1.2rem;
+  color: var(--font-secondary);
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.contact-container p {
+  font-size: 2rem;
+  color: var(--font-primary);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.social-links a {
+  color: var(--font-secondary);
+  font-size: 2.2rem;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-links a:hover {
+  color: var(--accent-color);
+  transform: scale(1.1);
+}
+
+.footer-copy {
+  color: var(--font-secondary);
+  font-size: 0.9rem;
+}
+
+.footer-copy p {
+  opacity: 0.3;
+  font-size: 1rem;
+}
+
+/* Responsividade do Contato */
+@media (max-width: 768px) {
+  .contact-container p {
+    font-size: 1.5rem;
+  }
+}

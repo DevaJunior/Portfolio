@@ -1,0 +1,111 @@
+/* Container principal da seção do header */
+.header-section {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: var(--background-dark);
+  z-index: 1000;
+  border-bottom: 1px solid #2a2a2a; /* Linha sutil de separação */
+}
+
+/* Container que alinha o conteúdo */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px; /* Altura fixa para o header */
+}
+
+/* Container do logo e texto */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Espaço entre o ícone e o texto */
+}
+
+/* Círculo externo do logo */
+.logo-icon-wrapper {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--font-secondary); /* Borda cinza externa */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px; /* Espaço entre a borda externa e o ícone */
+}
+
+/* Ícone interno (SVG ou PNG) */
+.logo-icon {
+  width: 100%;
+  height: 100%;
+  /* O ícone em si pode ter um fundo, ou ser transparente */
+}
+
+/* Texto "Devair Junior" */
+.logo-text {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--font-primary);
+}
+
+/* Símbolo ">" verde */
+.logo-slash {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--accent-color);
+}
+
+/* Navegação principal */
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 40px; /* Espaço entre os links */
+}
+
+.main-nav a {
+  font-size: 1rem;
+  color: var(--font-secondary);
+  transition: color 0.3s ease;
+  padding: 5px 0;
+}
+
+.main-nav a:hover {
+  color: var(--font-primary);
+}
+
+/* Estilo específico para o botão "Contact" */
+.contact-button {
+  border: 1px solid var(--font-primary);
+  border-radius: 20px; /* Bordas arredondadas para formar a pílula */
+  padding: 8px 20px !important;
+  color: var(--font-primary);
+  transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--background-dark);
+  font-weight: bold;
+}
+
+/* --- Responsividade --- */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+    gap: 20px;
+  }
+
+  .main-nav ul {
+    gap: 20px;
+    font-size: 0.9rem;
+  }
+
+  .contact-button {
+    padding: 6px 15px;
+  }
+}

@@ -1,0 +1,49 @@
+.about-section {
+  background-color: var(--background-light);
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 0px 25px 50px 25px;
+}
+
+.about-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  color: var(--accent-color);
+  letter-spacing: 5px;
+  white-space: nowrap;
+}
+
+.about-text {
+  max-width: 600px;
+  display: flex;
+  text-align: justify;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--font-secondary);
+}
+
+/* Responsividade do About */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .about-title {
+    writing-mode: horizontal-tb; /* Título volta ao normal */
+    transform: rotate(0);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+  }
+}

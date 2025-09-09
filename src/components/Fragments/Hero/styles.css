@@ -1,0 +1,50 @@
+.hero-container {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 25px;
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  color: var(--font-secondary);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.hero-graphic span {
+  font-size: 18rem;
+  color: #1a1a1a;
+  font-weight: bold;
+  user-select: none;
+}
+
+/* Responsividade do Hero */
+@media (max-width: 1024px) {
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+  .hero-graphic span {
+    font-size: 14rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 40px;
+  }
+  /* Em telas pequenas, o gráfico pode ser removido para focar no texto */
+  .hero-graphic {
+    display: none;
+  }
+}

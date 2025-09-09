@@ -1,0 +1,154 @@
+/* src/components/ProjectCard/styles.css */
+
+.project-card {
+  background-color: var(--background-light);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
+.project-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.project-content h3 {
+  font-size: 1.4rem;
+  color: var(--font-primary);
+  margin-bottom: 10px;
+}
+
+.project-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--font-secondary);
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
+.project-tech {
+  font-size: 0.85rem;
+  color: var(--accent-color);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* ============================================== */
+/* Estilos para o Card Principal (Featured) */
+/* ============================================== */
+.project-card--featured {
+  background-color: var(--background-dark); /* Fundo mais escuro para o card principal */
+  border: 1px solid var(--background-light); /* Borda sutil para definir */
+  padding: 30px; /* Mais padding interno */
+  text-align: center; /* Centraliza o texto principal */
+}
+
+.featured-header h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.featured-subtitle {
+  font-size: 1rem;
+  color: var(--font-secondary);
+  margin-bottom: 30px;
+}
+
+/* Estilo do "Mini Card" interno */
+.mini-card {
+  background-color: var(--background-light);
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column; /* Organiza verticalmente */
+  align-items: center; /* Centraliza os itens */
+}
+
+.mini-card-image {
+  width: 100%; /* Adapta ao pai */
+  max-height: 200px; /* Altura máxima para a imagem interna */
+  object-fit: cover;
+  border-radius: 4px; /* Pequeno arredondamento para a imagem interna */
+  margin-bottom: 15px;
+}
+
+.mini-card-greeting {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--font-primary);
+    margin-bottom: 5px;
+}
+
+.mini-card-name {
+    font-size: 1.2rem;
+    color: var(--accent-color);
+}
+
+
+.featured-description-block {
+  text-align: left; /* Alinha o texto da descrição à esquerda */
+}
+
+.featured-description {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--font-primary); /* Texto branco */
+  margin-bottom: 20px;
+}
+
+.featured-tech {
+  font-size: 0.9rem;
+  color: var(--accent-color);
+  font-family: 'Courier New', Courier, monospace;
+  white-space: pre-wrap; /* Permite que o texto quebre linha mantendo a formatação */
+  text-align: left; /* Garante alinhamento à esquerda para a lista de tecnologias */
+}
+
+/* Responsividade para o card principal */
+@media (max-width: 768px) {
+  .project-card--featured {
+    padding: 20px;
+  }
+  .featured-header h3 {
+    font-size: 1.5rem;
+  }
+  .featured-subtitle {
+    font-size: 0.9rem;
+  }
+  .mini-card {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  .mini-card-greeting {
+    font-size: 1.2rem;
+  }
+  .mini-card-name {
+    font-size: 1rem;
+  }
+  .featured-description {
+    font-size: 0.9rem;
+  }
+  .featured-tech {
+    font-size: 0.8rem;
+  }
+}

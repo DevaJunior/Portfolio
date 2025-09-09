@@ -1,0 +1,76 @@
+.portfolio-container {
+  text-align: center;
+  padding: 50px 25px;
+}
+
+.portfolio-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+/* NOVO: Wrapper principal do carrossel, posicionado para conter as setas */
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  padding: 0 50px; /* Espaço para as setas não ficarem em cima do conteúdo */
+}
+
+/* NOVO: A "janela" do carrossel, que esconde os itens fora da visão */
+.carousel-viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+/* NOVO: O container que se move e contém todos os cards */
+.carousel-track {
+  display: flex;
+  /* A transição suave para o efeito de scroll */
+  transition: transform 0.5s ease-in-out;
+  /* A largura total do track é calculada implicitamente pelo flex dos itens */
+}
+
+/* NOVO: Cada item (card) dentro do carrossel */
+.carousel-item {
+  /* Cada item ocupa 25% da largura do viewport (100% / 4 itens) */
+  flex: 0 0 25%;
+  padding: 0 15px; /* Espaçamento entre os cards */
+}
+
+/* NOVO: Estilo para as setas de navegação */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  z-index: 2;
+  transition: background-color 0.3s;
+}
+
+.carousel-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-arrow.prev {
+  left: 0;
+}
+
+.carousel-arrow.next {
+  right: 0;
+}
+
+/* Estilo para a seta quando estiver desabilitada */
+.carousel-arrow:disabled {
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: not-allowed;
+  opacity: 0.5;
+}

@@ -1,0 +1,56 @@
+/* src/index.css */
+
+:root {
+  --background-dark: #121212;
+  --background-light: #1E1E1E;
+  --font-primary: #FFFFFF;
+  --font-secondary: #AAAAAA;
+  --accent-color: #00f5b8;
+
+
+  /* Tipografia */
+  --font-sans: 'Inter', sans-serif; /* Use a fonte que preferir */
+  font-family: var(--font-sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-dark);
+  color: var(--font-primary);
+}
+
+a {
+  /* color: var(--font-primary); */
+  text-decoration: none;
+}
+
+/* Container reutilizável para centralizar conteúdo */
+.container {
+  margin: 0 auto;
+  padding: 0 40px; /* Espaçamento lateral */
+}
+
+/* Classe base para todas as seções */
+.section {
+  padding: 100px 0; /* Espaçamento vertical */
+  overflow: hidden; /* Evita barras de rolagem indesejadas */
+}
+
+/* Ajustes de espaçamento para telas menores */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+  .section {
+    padding: 70px 0;
+  }
+}
