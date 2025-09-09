@@ -59,8 +59,12 @@ const Portfolio: React.FC = () => {
       return 1;
     } else if (window.innerWidth <= 768) {
       return 2;
+    } else if (window.innerWidth <= 950) {
+      return 3;
+    }else if (window.innerWidth <= 1500) {
+      return 4;
     }
-    return 4;
+    return 5;
   };
 
   // NOVO: Efeito para atualizar o itemsPerPage quando a tela for redimensionada
