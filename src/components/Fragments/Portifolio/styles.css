@@ -74,3 +74,49 @@
   cursor: not-allowed;
   opacity: 0.5;
 }
+
+@media (max-width: 768px) {
+  .portfolio-container h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  .carousel-wrapper {
+    padding: 0 40px; /* Reduz o espaçamento das setas */
+  }
+
+  /* Exibe 2 itens por vez em tablets */
+  .carousel-item {
+    flex: 0 0 50%;
+  }
+
+  .carousel-item {
+    padding: 0 10px; /* Reduz o espaçamento entre os cards */
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-container {
+    padding: 30px 15px;
+  }
+
+  .portfolio-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .carousel-wrapper {
+    padding: 0 20px; /* Reduz o espaçamento das setas para telas menores */
+  }
+
+  /* Exibe 1 item por vez em smartphones */
+  .carousel-item {
+    flex: 0 0 100%;
+  }
+
+  .carousel-arrow {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+}

@@ -77,35 +77,68 @@
 
 /* Estilo específico para o botão "Contact" */
 .contact-button {
-  border: 1px solid var(--font-primary);
-  border-radius: 20px; /* Bordas arredondadas para formar a pílula */
-  padding: 8px 20px !important;
   color: var(--font-primary);
   transition: all 0.3s ease;
 }
 
-.contact-button:hover {
+.contact-button:hover {  
+  border-radius: 20px;   padding: 8px 20px !important;
   background-color: var(--accent-color);
-  border-color: var(--accent-color);
   color: var(--background-dark);
   font-weight: bold;
 }
 
-/* --- Responsividade --- */
 @media (max-width: 768px) {
   .header-container {
-    flex-direction: column;
     height: auto;
-    padding: 20px 0;
-    gap: 20px;
+    padding: 15px 25px; /* Adiciona padding horizontal para tablets */
   }
 
   .main-nav ul {
-    gap: 20px;
-    font-size: 0.9rem;
+    gap: 25px; /* Reduz o espaçamento entre os links */
   }
 
+  .logo-text,
+  .logo-slash {
+    font-size: 1.1rem; /* Diminui o tamanho da fonte do logo */
+  }
+
+  .logo-icon-wrapper {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/* --- Responsividade --- */
+@media (max-width: 480px) {
+  .header-container {
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px 20px;
+    height: auto;
+  }
+
+  .logo-container {
+    width: 100%;
+    justify-content: center; /* Centraliza o logo no topo */
+    margin-bottom: 15px; /* Adiciona espaço abaixo do logo */
+  }
+
+  .main-nav ul {
+    /* flex-direction: column; */
+    gap: 15px;
+    width: 100%;
+    text-align: center; /* Centraliza o texto dos links */
+  }
+
+  .main-nav a {
+    font-size: 0.9rem;
+    padding: 10px 0;
+  }
+  
   .contact-button {
-    padding: 6px 15px;
+    margin-top: 10px; /* Adiciona espaçamento acima do botão */
+    width: 100%; /* Faz o botão ocupar a largura total */
+    text-align: center;
   }
 }

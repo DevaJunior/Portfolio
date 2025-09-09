@@ -40,3 +40,50 @@
   font-size: 0.9rem;
   color: var(--font-secondary);
 }
+
+@media (max-width: 768px) {
+  .skills-container h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  .skills-grid {
+    gap: 20px; /* Reduz o espaçamento entre os itens */
+    max-width: 600px; /* Reduz a largura máxima para se adequar melhor a tablets */
+  }
+
+  .skill-item {
+    padding: 12px; /* Reduz o padding interno dos itens */
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-container {
+    padding: 30px 15px;
+  }
+
+  .skills-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .skills-grid {
+    gap: 15px; /* Reduz ainda mais o espaçamento */
+    /* Para garantir que os itens se ajustem, o minmax pode ser ajustado,
+       mas com 100px já deve funcionar bem. A grade já se adapta bem por natureza. */
+  }
+
+  .skill-item {
+    gap: 10px; /* Reduz o espaçamento entre o ícone e o texto */
+    padding: 10px;
+  }
+
+  .skill-item img {
+    width: 35px; /* Reduz o tamanho do ícone */
+    height: 35px;
+  }
+
+  .skill-item p {
+    font-size: 0.8rem; /* Reduz o tamanho da fonte do texto */
+  }
+}

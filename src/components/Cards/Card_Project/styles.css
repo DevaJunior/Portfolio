@@ -152,3 +152,62 @@
     font-size: 0.8rem;
   }
 }
+
+@media (max-width: 480px) {
+  .project-card {
+    padding: 8px; /* Reduz o padding interno do cartão */
+  }
+
+  .project-content {
+    padding: 15px; /* Reduz o padding do conteúdo */
+  }
+
+  .project-content h3 {
+    font-size: 1.2rem; /* Diminui o tamanho do título */
+    margin-bottom: 8px;
+  }
+
+  .project-description {
+    font-size: 0.85rem; /* Diminui o tamanho da descrição */
+    margin-bottom: 15px;
+  }
+
+  .project-tech {
+    font-size: 0.75rem; /* Diminui o tamanho da tecnologia */
+  }
+
+  /* Ajustes para o card principal em smartphones */
+  .project-card--featured {
+    padding: 15px;
+  }
+
+  .featured-header h3 {
+    font-size: 1.3rem;
+  }
+
+  .featured-subtitle {
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+  }
+
+  .mini-card {
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+
+  .mini-card-greeting {
+    font-size: 1rem;
+  }
+
+  .mini-card-name {
+    font-size: 0.9rem;
+  }
+
+  .featured-description {
+    font-size: 0.85rem;
+  }
+
+  .featured-tech {
+    font-size: 0.7rem;
+  }
+}

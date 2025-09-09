@@ -47,9 +47,58 @@
   font-size: 1rem;
 }
 
-/* Responsividade do Contato */
 @media (max-width: 768px) {
+  .contact-container {
+    padding: 40px 20px; /* Reduz o padding vertical e horizontal */
+  }
+
+  .contact-container h2 {
+    font-size: 1.1rem; /* Diminui a fonte do subtítulo */
+    margin-bottom: 8px;
+  }
+
   .contact-container p {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Mantém o tamanho da fonte do texto principal */
+  }
+
+  .social-links {
+    gap: 25px; /* Reduz o espaçamento entre os ícones */
+    margin: 30px 0;
+  }
+
+  .social-links a {
+    font-size: 2rem; /* Diminui um pouco o tamanho dos ícones sociais */
+  }
+
+  .footer-copy {
+    font-size: 0.85rem; /* Diminui a fonte do texto do rodapé */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    padding: 30px 15px; /* Reduz o padding geral da seção */
+  }
+
+  .contact-container h2 {
+    font-size: 1rem; /* Reduz o tamanho da fonte do subtítulo */
+    margin-bottom: 8px;
+  }
+
+  .contact-container p {
+    font-size: 1.2rem; /* Reduz o tamanho da fonte do texto principal */
+  }
+
+  .social-links {
+    gap: 20px; /* Diminui o espaçamento entre os ícones sociais */
+    margin: 30px 0;
+  }
+
+  .social-links a {
+    font-size: 1.8rem; /* Reduz o tamanho dos ícones */
+  }
+
+  .footer-copy {
+    font-size: 0.8rem; /* Reduz o tamanho da fonte do texto de copyright */
   }
 }
