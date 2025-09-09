@@ -1,3 +1,5 @@
+/* src/components/Portfolio/styles.css */
+
 .portfolio-container {
   text-align: center;
   padding: 50px 25px;
@@ -8,35 +10,29 @@
   margin-bottom: 50px;
 }
 
-/* NOVO: Wrapper principal do carrossel, posicionado para conter as setas */
 .carousel-wrapper {
   position: relative;
   width: 100%;
-  padding: 0 50px; /* Espaço para as setas não ficarem em cima do conteúdo */
+  padding: 0 50px;
 }
 
-/* NOVO: A "janela" do carrossel, que esconde os itens fora da visão */
 .carousel-viewport {
   overflow: hidden;
   width: 100%;
 }
 
-/* NOVO: O container que se move e contém todos os cards */
 .carousel-track {
   display: flex;
-  /* A transição suave para o efeito de scroll */
   transition: transform 0.5s ease-in-out;
-  /* A largura total do track é calculada implicitamente pelo flex dos itens */
+  /* NOVO: Espaçamento entre os itens */
+  gap: 30px;
 }
 
-/* NOVO: Cada item (card) dentro do carrossel */
 .carousel-item {
-  /* Cada item ocupa 25% da largura do viewport (100% / 4 itens) */
-  flex: 0 0 25%;
-  padding: 0 15px; /* Espaçamento entre os cards */
+  /* NOVO: Use calc() para a largura, removendo o padding individual */
+  flex: 0 0 calc(25% - 22.5px);
 }
 
-/* NOVO: Estilo para as setas de navegação */
 .carousel-arrow {
   position: absolute;
   top: 50%;
@@ -68,12 +64,13 @@
   right: 0;
 }
 
-/* Estilo para a seta quando estiver desabilitada */
 .carousel-arrow:disabled {
   background-color: rgba(0, 0, 0, 0.2);
   cursor: not-allowed;
   opacity: 0.5;
 }
+
+/* --- Responsividade --- */
 
 @media (max-width: 768px) {
   .portfolio-container h2 {
@@ -82,16 +79,16 @@
   }
 
   .carousel-wrapper {
-    padding: 0 40px; /* Reduz o espaçamento das setas */
+    padding: 0 40px;
+  }
+
+  .carousel-track {
+    gap: 20px; /* Reduz o espaçamento para telas menores */
   }
 
   /* Exibe 2 itens por vez em tablets */
   .carousel-item {
-    flex: 0 0 50%;
-  }
-
-  .carousel-item {
-    padding: 0 10px; /* Reduz o espaçamento entre os cards */
+    flex: 0 0 calc(50% - 10px);
   }
 }
 
@@ -106,7 +103,11 @@
   }
 
   .carousel-wrapper {
-    padding: 0 20px; /* Reduz o espaçamento das setas para telas menores */
+    padding: 0 20px;
+  }
+
+  .carousel-track {
+    gap: 15px; /* Reduz o espaçamento para smartphones */
   }
 
   /* Exibe 1 item por vez em smartphones */

@@ -51,31 +51,27 @@ const projects = [
 
 const Portfolio: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  // NOVO: Estado para a quantidade de itens por página
   const [itemsPerPage, setItemsPerPage] = useState(4);
 
-  // NOVO: Função para obter o número de itens com base na largura da tela
   const getItemsPerPage = () => {
-    if (window.innerWidth <= 480) {
+    const width = window.innerWidth;
+    if (width <= 480) {
       return 1;
-    } else if (window.innerWidth <= 768) {
+    } else if (width <= 768) {
       return 2;
-    } else if (window.innerWidth <= 950) {
+    } else if (width <= 950) {
       return 3;
-    }else if (window.innerWidth <= 1500) {
-      return 4;
     }
-    return 5;
+    return 4;
   };
 
-  // NOVO: Efeito para atualizar o itemsPerPage quando a tela for redimensionada
   useEffect(() => {
     const handleResize = () => {
       setItemsPerPage(getItemsPerPage());
     };
 
     window.addEventListener('resize', handleResize);
-    handleResize(); // Define o valor inicial
+    handleResize();
 
     return () => window.removeEventListener('resize', handleResize);
   }, []);
@@ -106,7 +102,6 @@ const Portfolio: React.FC = () => {
           <div
             className="carousel-track"
             style={{
-              // A porcentagem de transformação agora é calculada dinamicamente
               transform: `translateX(-${currentIndex * (100 / itemsPerPage)}%)`,
             }}
           >

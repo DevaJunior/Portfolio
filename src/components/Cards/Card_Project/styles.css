@@ -30,8 +30,8 @@
   flex-grow: 1;
 }
 
-.project-content h3 {
-  font-size: 1.4rem;
+.project-content h4 {
+  font-size: 1rem;
   color: var(--font-primary);
   margin-bottom: 10px;
 }
@@ -192,10 +192,10 @@
     /* Reduz o padding do conteúdo */
   }
 
-  .project-content h3 {
-    font-size: 1.2rem;
+  .project-content h4 {
+    font-size: 1rem;
     /* Diminui o tamanho do título */
-    margin-bottom: 8px;
+    margin-bottom: 10px;
   }
 
   .project-description {

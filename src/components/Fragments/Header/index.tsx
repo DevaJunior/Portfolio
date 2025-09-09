@@ -16,7 +16,7 @@ const Header: React.FC = () => {
         </div>
         <nav className="main-nav">
           <ul>
-            <li><a href="#home">Home</a></li>
+            <li><a href="#home">Início</a></li>
             <li><a href="#about">Sobre</a></li>
             <li><a href="#projects">Projetos</a></li>
             <li><a href="#skills">Habilidades</a></li>
