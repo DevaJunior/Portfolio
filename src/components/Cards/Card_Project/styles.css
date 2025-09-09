@@ -112,6 +112,7 @@
 .featured-description {
   font-size: 1rem;
   line-height: 1.7;
+  text-align: justify;
   color: var(--font-primary); /* Texto branco */
   margin-bottom: 20px;
 }

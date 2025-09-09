@@ -107,6 +107,10 @@
     width: 35px;
     height: 35px;
   }
+
+  .logo-icon-wrapper p {
+    font-size: 20px;
+  }
 }
 
 /* --- Responsividade --- */
