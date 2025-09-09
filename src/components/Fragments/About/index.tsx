@@ -7,7 +7,7 @@ const About: React.FC = () => {
       <h2 className="about-title">SOBRE</h2>
       <div className="about-text">
         <p>
-          Desenvolvedor front-end React (TypeScript & JavaScript), grande entusiasta pelo desenvolvimento de componentes responsivos e reutilizáveis, possuo experiência em projetos gerenciados por metodologias ágeis e versionamento de código, principalmente em modelagem estatística para lógica Fuzzy em Biotec 4.0.
+          Desenvolvedor front-end React (TypeScript & JavaScript), grande entusiasta pelo desenvolvimento de componentes responsivos e reutilizáveis, possuo experiência em projetos gerenciados por metodologias ágeis e versionamento de código, principalmente em modelagem estatística para lógica Fuzzy em Biotecnologia 4.0.
         </p>
         <p>
           Atualmente mestrando em Biotecnologia e graduando em Análise e Desenvolvimento de Sistemas.
