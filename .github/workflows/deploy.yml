@@ -1,43 +1,53 @@
+# Nome do workflow
 name: Deploy Vite Project to GitHub Pages
 
+# Gatilho para rodar a ação
 on:
   push:
     branches:
       - main # Ou a branch principal que você usa
 
+# Permissões necessárias para a action poder escrever no ambiente do GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
+# Define os jobs
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
+      # Clona o seu repositório para o ambiente da action
       - name: Checkout 🛎️
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4 # Versão atualizada
 
+      # Configura o ambiente Node.js
       - name: Setup Node.js ⚙️
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4 # Versão atualizada
         with:
-          node-version: '18'
+          node-version: '20' # Usando uma versão LTS mais recente
           cache: 'npm'
 
+      # Instala as dependências do projeto
       - name: Install Dependencies 📦
         run: npm install
 
+      # Roda o comando de build para gerar a pasta 'dist'
       - name: Build Project 🏗️
         run: npm run build
 
+      # Configura o GitHub Pages para receber os arquivos
       - name: Setup Pages 🛠️
-        uses: actions/configure-pages@v3
+        uses: actions/configure-pages@v5 # Versão atualizada
 
+      # ✅ Ação correta e atualizada para fazer o upload dos arquivos para o Pages
       - name: Upload Artifact 🚀
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3 # Versão atualizada
         with:
-          # A pasta padrão de saída do Vite é 'dist'
           path: './dist'
 
+      # ✅ Ação correta e atualizada para fazer o deploy final
       - name: Deploy to GitHub Pages 🚀
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4 # Versão atualizada
