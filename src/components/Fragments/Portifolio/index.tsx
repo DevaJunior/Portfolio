@@ -88,7 +88,8 @@ const Portfolio: React.FC = () => {
 
   return (
     <section id="projects" className="portfolio-container">
-      <h2>PORTFÓLIO</h2>
+      {/* <h2>PORTFÓLIO</h2> */}
+      <h2>PROJETOS</h2>
       <div className="carousel-wrapper">
         <button
           className="carousel-arrow prev"

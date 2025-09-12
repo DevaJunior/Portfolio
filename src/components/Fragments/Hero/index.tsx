@@ -11,8 +11,6 @@ const Hero: React.FC = () => {
         <p>Dev Front-end Bio-IT</p>
       </div>
       <div className="hero-graphic">
-        {/* <img src={HeroGraphic} alt="Code Graphic" /> */}
-        {/* Por enquanto, usando texto para simular a imagem */}
         <span>&lt;/&gt;</span>
       </div>
     </section>

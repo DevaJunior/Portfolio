@@ -1,13 +1,11 @@
-.about-section {
-  background-color: var(--background-light);
-}
-
-.about-container {
+/* --- ESTILOS DA SEÇÃO SOBRE --- */
+.about-section-container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 60px;
-  padding: 0px 25px 50px 25px;
+  padding: 50px 0;
+  /* background-color: #fff; */
 }
 
 .about-title {
@@ -34,16 +32,112 @@
   color: var(--font-secondary);
 }
 
-/* Responsividade do About */
+/* --- ESTILOS DO LAYOUT DA TIMELINE --- */
+.how-it-works-section {
+  background-color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.how-it-works-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 50px;
+}
+
+.horizontal-timeline {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.timeline-connector {
+  flex-grow: 1;
+  height: 2px;
+  background-image: linear-gradient(to right, #ddd 60%, transparent 40%);
+  background-size: 15px 2px;
+  background-repeat: repeat-x;
+  align-self: center;
+  margin: 0 15px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.timeline-connector::before,
+.timeline-connector::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 50%;
+}
+
+.timeline-connector::before {
+  left: -5px;
+}
+
+.timeline-connector::after {
+  right: -5px;
+}
+
+/* --- ESTILOS PARA PAGINAÇÃO DE DOTS --- */
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 50px;
+}
+
+.dot {
+  padding: 0;
+  border: none;
+  width: 7.5px;
+  height: 7.5px;
+  border-radius: 50%;
+  background-color: #dcdcdc;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot:hover {
+  background-color: #b0b0b0;
+}
+
+.dot.active {
+  background-color: #636363;
+  transform: scale(1.2);
+}
+
+/* --- RESPONSIVIDADE --- */
 @media (max-width: 768px) {
-  .about-container {
+  .about-section-container {
     flex-direction: column;
     gap: 30px;
   }
+
   .about-title {
-    writing-mode: horizontal-tb; /* Título volta ao normal */
+    writing-mode: horizontal-tb;
     transform: rotate(0);
     border-bottom: 2px solid var(--accent-color);
     padding-bottom: 10px;
+  }
+
+  .horizontal-timeline {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    min-height: 0;
+    /* Remove a altura mínima no mobile */
+  }
+
+  .timeline-connector {
+    display: none;
   }
 }

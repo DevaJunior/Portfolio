@@ -1,0 +1,83 @@
+/* src/components/Card_Timeline.css */
+
+.timeline-step {
+  display: flex;
+  height: 315px;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 250px;
+  flex-shrink: 0;
+}
+
+.step-header {
+  height: 30px;
+  /* Espaço para o ano */
+  margin-bottom: 10px;
+}
+
+.step-year {
+  font-weight: bold;
+  color: #555;
+}
+
+.step-icon-wrapper {
+  width: 90px;
+  height: 90px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 36px;
+  margin-bottom: 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Gradientes para cada ícone */
+.icon-purple {
+  background: linear-gradient(135deg, #8A2BE2, #C67DFF);
+}
+
+.icon-cyan {
+  background: linear-gradient(135deg, #00BFFF, #00F5FF);
+  /* Efeito de brilho */
+  box-shadow: 0 0 30px rgba(0, 245, 255, 0.7);
+}
+
+.icon-pink {
+  background: linear-gradient(135deg, #FF69B4, #FFC0CB);
+}
+
+.step-content {
+  text-align: center;
+}
+
+.step-content p:nth-child(3) {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.step-content h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.step-content p {
+  font-size: 0.9rem;
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+.step-profession {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #007bff;
+  /* Cor de destaque */
+  margin-bottom: 10px;
+  margin-top: -5px;
+  /* Ajuste de espaçamento */
+}
