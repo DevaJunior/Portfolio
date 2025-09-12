@@ -1,5 +1,3 @@
-/* src/components/Card_Timeline.css */
-
 .timeline-step {
   display: flex;
   height: 315px;
@@ -11,7 +9,6 @@
 
 .step-header {
   height: 30px;
-  /* Espaço para o ano */
   margin-bottom: 10px;
 }
 
@@ -33,14 +30,12 @@
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
-/* Gradientes para cada ícone */
 .icon-purple {
   background: linear-gradient(135deg, #8A2BE2, #C67DFF);
 }
 
 .icon-cyan {
   background: linear-gradient(135deg, #00BFFF, #00F5FF);
-  /* Efeito de brilho */
   box-shadow: 0 0 30px rgba(0, 245, 255, 0.7);
 }
 
@@ -76,8 +71,25 @@
   font-size: 0.95rem;
   font-weight: 500;
   color: #007bff;
-  /* Cor de destaque */
   margin-bottom: 10px;
   margin-top: -5px;
-  /* Ajuste de espaçamento */
+}
+
+/* --- RESPONSIVIDADE DO CARD --- */
+@media (max-width: 768px) {
+  .timeline-step {
+    height: auto; /* Remove a altura fixa para o conteúdo fluir */
+    flex-basis: 100%; /* Ocupa a largura disponível */
+    max-width: 350px; /* Define uma largura máxima */
+  }
+
+  .step-icon-wrapper {
+    width: 80px; /* Diminui o ícone */
+    height: 80px;
+    font-size: 32px;
+  }
+
+  .step-content h3 {
+    font-size: 1.15rem; /* Diminui o título do card */
+  }
 }
