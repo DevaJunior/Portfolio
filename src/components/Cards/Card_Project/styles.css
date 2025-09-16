@@ -21,6 +21,7 @@
   aspect-ratio: 16 / 9;
   object-fit: cover;
   display: block;
+  border-radius: 8px;
 }
 
 .project-content {
@@ -40,13 +41,13 @@
   font-size: 0.95rem;
   line-height: 1.6;
   color: var(--font-secondary);
-  flex-grow: 1;
   margin-bottom: 20px;
   text-align: justify;
 
   display: -webkit-box;
-  -webkit-line-clamp: 7;
   -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -58,17 +59,13 @@
 }
 
 /* ============================================== */
-/* Estilos para o Card Principal (Featured) */
+/* Estilos para o Card Principal (Featured)       */
 /* ============================================== */
 .project-card--featured {
   background-color: var(--background-dark);
-  /* Fundo mais escuro para o card principal */
   border: 1px solid var(--background-light);
-  /* Borda sutil para definir */
   padding: 30px;
-  /* Mais padding interno */
   text-align: center;
-  /* Centraliza o texto principal */
 }
 
 .featured-header h3 {
@@ -92,19 +89,14 @@
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
-  /* Organiza verticalmente */
   align-items: center;
-  /* Centraliza os itens */
 }
 
 .mini-card-image {
   width: 100%;
-  /* Adapta ao pai */
   max-height: 200px;
-  /* Altura máxima para a imagem interna */
   object-fit: cover;
   border-radius: 4px;
-  /* Pequeno arredondamento para a imagem interna */
   margin-bottom: 15px;
 }
 
@@ -123,7 +115,6 @@
 
 .featured-description-block {
   text-align: left;
-  /* Alinha o texto da descrição à esquerda */
 }
 
 .featured-description {
@@ -131,8 +122,13 @@
   line-height: 1.7;
   text-align: justify;
   color: var(--font-primary);
-  /* Texto branco */
   margin-bottom: 20px;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .featured-tech {
@@ -140,9 +136,7 @@
   color: var(--accent-color);
   font-family: 'Courier New', Courier, monospace;
   white-space: pre-wrap;
-  /* Permite que o texto quebre linha mantendo a formatação */
   text-align: left;
-  /* Garante alinhamento à esquerda para a lista de tecnologias */
 }
 
 /* Responsividade para o card principal */
@@ -184,29 +178,24 @@
 @media (max-width: 480px) {
   .project-card {
     padding: 8px;
-    /* Reduz o padding interno do cartão */
   }
 
   .project-content {
     padding: 15px;
-    /* Reduz o padding do conteúdo */
   }
 
   .project-content h4 {
     font-size: 1rem;
-    /* Diminui o tamanho do título */
     margin-bottom: 10px;
   }
 
   .project-description {
     font-size: 0.85rem;
-    /* Diminui o tamanho da descrição */
     margin-bottom: 15px;
   }
 
   .project-tech {
     font-size: 0.75rem;
-    /* Diminui o tamanho da tecnologia */
   }
 
   /* Ajustes para o card principal em smartphones */

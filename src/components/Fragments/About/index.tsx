@@ -33,7 +33,7 @@ const About: React.FC = () => {
       // Avança para a próxima página. O operador de módulo (%) faz com que
       // ele volte para 0 (primeira página) após chegar na última.
       setCurrentPage(prevPage => (prevPage + 1) % totalPages);
-    }, 100000); //8000
+    }, 10000); //8000
 
     // 3. Função de limpeza: será executada antes de o efeito rodar novamente
     // ou quando o componente for desmontado. Isso evita vazamentos de memória.

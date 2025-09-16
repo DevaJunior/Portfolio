@@ -89,7 +89,7 @@ const Portfolio: React.FC = () => {
   return (
     <section id="projects" className="portfolio-container">
       {/* <h2>PORTFÓLIO</h2> */}
-      <h2>PROJETOS</h2>
+      <h2>Projetos</h2>
       <div className="carousel-wrapper">
         <button
           className="carousel-arrow prev"
@@ -102,9 +102,7 @@ const Portfolio: React.FC = () => {
         <div className="carousel-viewport">
           <div
             className="carousel-track"
-            style={{
-              transform: `translateX(-${currentIndex * (100 / itemsPerPage)}%)`,
-            }}
+            style={{ transform: `translateX(-${currentIndex * (100 / itemsPerPage)}%)`, }}
           >
             {projects.map((project, index) => (
               <div className="carousel-item" key={index}>
