@@ -43,7 +43,7 @@ const projects = [
     imageUrl: img4,
   },
   {
-    title: 'Landing Page Psiquiatria',
+    title: 'L A D I N G . P A G E',
     description: 'Solução digital dedicada ao cuidado da saúde mental, projetada para otimizar o atendimento psiquiátrico e fortalecer a relação médico-paciente. O sistema oferece recursos essenciais como agendamento inteligente de consultas, prontuário eletrônico de pacientes (PEP) integrado, acompanhamento da evolução clínica e módulo de telemedicina seguro e confidencial. Focado em proporcionar praticidade e acessibilidade, o aplicativo facilita a gestão de planos terapêuticos, emissão de prescrições digitais e o monitoramento contínuo de sintomas, garantindo um cuidado humanizado, seguro e eficiente.',
     technologies: 'React • TypeScript • HTML e CSS • Firebase • Github',
     imageUrl: img6,
