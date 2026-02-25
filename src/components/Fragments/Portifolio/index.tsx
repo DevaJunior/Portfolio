@@ -9,6 +9,7 @@ import img2 from '../../../images/wpp/wpp-app-spotted.png';
 import img3 from '../../../images/wpp/wpp-app-biogen.png';
 import img4 from '../../../images/wpp/wpp-app-omni-2.png';
 import img5 from '../../../images/wpp/wpp-app-trackmoney.png';
+import img6 from '../../../images/wpp/wpp-app-dra_paula.png';
 
 const projects = [
   {
@@ -38,14 +39,14 @@ const projects = [
   {
     title: 'Omni',
     description: '...',
-    technologies: 'Biotecnologia • Fuzzy • Python • React • TypeScript • HTML e CSS • Redux • Firebase • Github',
+    technologies: 'Biotecnologia • P-Fuzzy • Python • R • React • TypeScript • HTML e CSS • Firebase • Github',
     imageUrl: img4,
   },
   {
-    title: '...',
-    description: 'Descrição...',
-    technologies: '...',
-    imageUrl: "",
+    title: 'Landing Page Psiquiatria',
+    description: 'Solução digital dedicada ao cuidado da saúde mental, projetada para otimizar o atendimento psiquiátrico e fortalecer a relação médico-paciente. O sistema oferece recursos essenciais como agendamento inteligente de consultas, prontuário eletrônico de pacientes (PEP) integrado, acompanhamento da evolução clínica e módulo de telemedicina seguro e confidencial. Focado em proporcionar praticidade e acessibilidade, o aplicativo facilita a gestão de planos terapêuticos, emissão de prescrições digitais e o monitoramento contínuo de sintomas, garantindo um cuidado humanizado, seguro e eficiente.',
+    technologies: 'React • TypeScript • HTML e CSS • Firebase • Github',
+    imageUrl: img6,
   },
 ];
 
